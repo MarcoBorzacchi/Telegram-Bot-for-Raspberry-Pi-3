@@ -18,7 +18,7 @@ chosen_temp = 0
 changing_t = False
 camera = PiCamera()
 camera.rotation = 180
-private_chat_id = 479997636
+private_chat_id = <your_chat_id>
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)	# to detect a movement
@@ -131,7 +131,7 @@ try :
 
 	# Create the object bot from library telepot, class Bot indicating the specific
 	# token, given by the "BotFather" during the Bot creation
-	bot = telepot.Bot('793909179:AAEz6r-OuFoiYEkgaur5dZhemAMpNHrMMYY') 
+	bot = telepot.Bot('<your_Bot_token>') 
 	
 	# MessageLoop is a method imported from telepot.loop (library telepot, clas loop). 
 	# It takes as parameter the object bot and the function handle.
